@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camila Mejail - UI/UX Designer</title>
+  <link href="./css/output.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-customYellow">
+
+<header class="bg-gray-100 py-2 rounded-lg shadow-md mx-auto mt-8 max-w-4xl sticky top-0 z-50">
+  <div class="absolute -left-80 top-4 text-2xl font-bold text-gray-700">Camila Mejail</div>
+
+  <div class="container mx-auto flex justify-between items-center px-4">
+    <nav class="flex justify-between w-full font-semibold" id="navbar">
+      <a href="#home" id="nav-home" class="text-gray-700 hover:text-gray-900 px-6 py-2">Home</a>
+      <a href="#about-me" id="nav-about-me" class="text-gray-700 hover:text-gray-900 px-6 py-2">About Me</a>
+      <a href="#projects" id="nav-projects" class="text-gray-700 hover:text-gray-900 px-6 py-2">Projects</a>
+      <a href="#services" id="nav-services" class="text-gray-700 hover:text-gray-900 px-6 py-2">Services</a>
+      <a href="#tools" id="nav-tools" class="text-gray-700 hover:text-gray-900 px-6 py-2">Tools</a>
+      <a href="#contact-me" id="nav-contact-me" class="px-6 py-2 bg-customGreen text-gray-900 font-semibold rounded-lg hover:brightness-110">Contact Me</a>
+    </nav>
+  </div>
+
+  <div class="absolute -right-80 top-4 text-lg font-bold flex space-x-2">
+    <button id="language-toggle" class="language-toggle">
+      <img id="flag" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English" class="w-8 h-6" />
+    </button>
+  </div>
+</header>
+
+<section id="home" class="mt-28 flex flex-col justify-center items-center text-center relative">
+  <h2 id="greeting" class="font-extrabold tracking-wide font-poppins text-stroke">
+    Hi, I'm UI/UX <br> Designer
+  </h2>
+  <div class="absolute top-3/4 transform -translate-y-1/2">
+    <img src="./img/banner.png" alt="Camila Mejail" class="w-96 md:w-96">
+  </div>
+</section>
+
+<section class="flex items-center justify-end pb-44"></section>
+
+<section class="flex flex-col items-center text-center relative m-0">
+  <div class="w-[102vw] bg-black py-3 transform -rotate-3 origin-bottom-left">
+    <p class="text-white font-poppins font-medium text-3xl w-full text-center">
+      <span id="conversational-ux" class="mx-4">Conversational UX Designer</span>
+      <span class="text-customGreen mx-4">|</span>
+      <span id="content-analyst" class="mx-4">Content Analyst</span>
+      <span class="text-customGreen mx-4">|</span>
+      <span id="ux-writing" class="mx-4">UX Writing</span>
+      <span class="text-customGreen mx-4">|</span>
+      <span id="software-tester" class="mx-4">Software Tester</span>
+    </p>
+  </div>
+</section>
+
+<section class="w-[110vw] absolute bg-white h-24 transform -rotate-3 origin-top-left"></section>
+
+<section id="about-me" class="bg-white relative overflow-hidden">
+  <div class="container mx-auto max-w-3xl px-6">
+    <h2 id="about-me-title" class="text-4xl font-bold text-center mb-2">About Me</h2>
+    <div class="w-28 h-1 mx-auto bg-customGreen mb-10"></div>
+
+    <div class="space-y-10">
+      <p id="about-me-description1" class="text-lg text-gray-700 border-l-4 border-customGreen pl-4">
+        With over six years of professional experience, I am a creative, adaptive, and user-centric UX/UI designer. My mission is to create digital solutions that are engaging, functional, and accessible to diverse audiences and needs.
+      </p>
+
+      <p id="about-me-description2" class="text-lg text-gray-700 border-l-4 border-customGreen pl-4">
+        I collaborate with other designers, developers, product managers, and stakeholders to define project requirements, goals, and metrics. I also participate in feedback sessions, user interviews, usability tests, and data analysis to validate and optimize solutions.
+      </p>
+
+      <p id="about-me-description3" class="text-lg text-gray-700 border-l-4 border-customGreen pl-4">
+        Beyond design, I’m committed to continuous learning and adapting to new industry trends. My approach is dynamic, embracing challenges and remaining dedicated to optimizing user flow and visual coherence. I believe in the power of design to elevate products and create impactful interactions, and I’m driven by the desire to leave a lasting, positive impression through my work.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="bg-white py-20">
+  <div class="container mx-auto max-w-5xl px-6">
+    <h2 id="projects-title" class="text-4xl font-bold text-gray-900 text-center mb-2">Projects</h2>
+    <div class="w-24 h-1 mx-auto bg-customGreen mb-10"></div>
+
+    <p id="resume-prompt" class="text-lg text-gray-700 text-center mb-10">
+      Here you have direct access to my most recent projects and I invite you to download my resume to get to know me completely.
+    </p>
+
+    <div class="flex w-full justify-end ">
+      <a id="download-resume" href="./files/resume.pdf" download class="bg-customGreen text-gray-900 font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-customYellow transition-colors duration-300 flex items-center mb-8">
+        <i class="fa-solid fa-cloud-arrow-down mr-2"></i>
+        <span>Download Resume</span>
+      </a>
+    </div>
+
+    <div class="grid gap-16 space-x-1 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+      <div class="bg-customGreen text-gray-900 rounded-lg p-4 shadow-md flex items-center justify-center h-48 w-48">
+        <h3 class="text-md font-bold text-center">Figma</h3>
+      </div>
+      <div class="bg-customGreen text-gray-900 rounded-lg p-4 shadow-md flex items-center justify-center h-48 w-48">
+        <h3 class="text-md font-bold text-center">Own Illustrations & Designs</h3>
+      </div>
+      <div class="bg-customGreen text-gray-900 rounded-lg p-4 shadow-md flex items-center justify-center h-48 w-48">
+        <h3 class="text-md font-bold text-center">Wordpress</h3>
+      </div>
+      <div class="bg-customGreen text-gray-900 rounded-lg p-4 shadow-md flex items-center justify-center h-48 w-48">
+        <h3 class="text-md font-bold text-center">Responsive & Mobile</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="bg-white py-20">
+  <div class="container mx-auto max-w-5xl px-6">
+    <h2 id="services-title" class="text-4xl font-bold text-gray-900 text-center mb-2">My Services</h2>
+    <div class="w-36 h-1 mx-auto bg-customGreen mb-10"></div>
+
+    <p id="services-description" class="my-6 text-lg text-gray-700 text-center">
+      My focus is always on creating accessible and engaging digital solutions that positively impact diverse audiences. I'm ready to take your project to the next level. Let's talk!
+    </p>
+
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div class="bg-customGreen text-gray-900 rounded-lg p-8 shadow-md hover:bg-customYellow transition-colors duration-500">
+        <h3 id="service-title1" class="text-2xl font-bold mb-4">UX/UI Design</h3>
+        <p id="service-description1">Developing intuitive and engaging interfaces that enhance user experience.</p>
+      </div>
+      <div class="bg-customGreen text-gray-900 rounded-lg p-8 shadow-md hover:bg-customYellow transition-colors duration-500">
+        <h3 id="service-title2" class="text-2xl font-bold mb-4">Wireframes and Interactive Prototypes</h3>
+        <p id="service-description2">Creating wireframes and prototypes that allow for visualizing user navigation and interactions before final implementation.</p>
+      </div>
+      <div class="bg-customGreen text-gray-900 rounded-lg p-8 shadow-md hover:bg-customYellow transition-colors duration-500">
+        <h3 id="service-title3" class="text-2xl font-bold mb-4">User Research</h3>
+        <p id="service-description3">Conducting interviews, usability tests, and data analysis to better understand user needs and behaviors.</p>
+      </div>
+      <div class="bg-customGreen text-gray-900 rounded-lg p-8 shadow-md hover:bg-customYellow transition-colors duration-500">
+        <h3 id="service-title4" class="text-2xl font-bold mb-4">Cross-Functional Collaboration</h3>
+        <p id="service-description4">Working closely with designers, developers, product managers, and other stakeholders to define project requirements, goals, and metrics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tools" class="bg-white py-20">
+  <div class="container mx-auto max-w-4xl px-6 text-center">
+    <h2 id="tools-title" class="text-4xl font-bold text-gray-900 mb-2">My Tools</h2>
+    <div class="w-28 h-1 mx-auto bg-customGreen mb-10"></div>
+
+    <p id="tools-description" class="text-lg text-gray-700 mb-10">
+      Equipped with industry-leading design tools, I bring ideas to life through intuitive and visually compelling experiences, ensuring every project is crafted with precision and creativity.
+    </p>
+
+    <div class="grid grid-cols-2 space-y-4 sm:grid-cols-4 gap-8 items-center">
+      <!-- Tool Icons -->
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/figma.png" alt="Figma" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/illustrator.png" alt="Illustrator" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/photoshop.png" alt="Photoshop" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/adobexd.png" alt="Adobe XD" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/atlassian.png" alt="Atlassian" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/sketch.png" alt="Sketch" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/invision.png" alt="InVision" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./img/icons/miro.png" alt="Miro" class="w-20 h-20 object-contain" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-me" class="bg-customYellow py-20">
+  <div class="container mx-auto max-w-3xl px-6">
+    <h2 id="contact-title" class="text-4xl font-bold text-gray-900 mb-2 text-center">Contact Me</h2>
+    <div class="w-32 h-1 mx-auto bg-customGreen mb-10"></div>
+
+    <p id="contact-description" class="text-lg text-gray-700 mb-12 text-center">
+      Feel free to contact me any time! I will get back to you soon.
+    </p>
+
+    <div class="bg-white p-8 rounded-lg shadow-md mb-10">
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label id="fullnamelabel" for="full-name" class="block text-gray-700 font-semibold mb-1">Full Name</label>
+          <input type="text" id="full-name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-customGreen">
+        </div>
+
+        <div>
+          <label id="emaillabel" for="email" class="block text-gray-700 font-semibold mb-1">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-customGreen">
+        </div>
+
+        <div>
+          <label id="messagelabel" for="message" class="block text-gray-700 font-semibold mb-1">Message</label>
+          <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-customGreen"></textarea>
+        </div>
+
+        <button id="send" type="submit" class="w-full bg-customGreen text-gray-900 font-semibold px-6 py-3 rounded-md hover:bg-customYellow transition-colors duration-300">
+          Send
+        </button>
+      </form>
+    </div>
+
+    <div class="flex justify-center space-x-8">
+      <a href="mailto:camilamejailpal@gmail.com" class="text-gray-700 hover:text-red-500 transition duration-300 ease-in-out">
+        <i class="fas fa-envelope text-3xl text-red-500"></i>
+      </a>
+      <a href="tel:+541124016219" class="text-gray-700 hover:text-blue-500 transition duration-300 ease-in-out">
+        <i class="fas fa-phone text-3xl text-blue-500"></i>
+      </a>
+      <a href="https://wa.me/541124016219" target="_blank" class="text-gray-700 hover:text-green-500 transition duration-300 ease-in-out">
+        <i class="fab fa-whatsapp text-3xl text-green-500"></i>
+      </a>
+      <a href="https://linkedin.com/in/camilamejail" target="_blank" class="text-gray-700 hover:text-blue-700 transition duration-300 ease-in-out">
+        <i class="fab fa-linkedin text-3xl text-blue-700"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/541124016219" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors duration-300">
+  <i class="fab fa-whatsapp text-3xl"></i>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
