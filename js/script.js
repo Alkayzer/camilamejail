@@ -1,4 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  document.getElementById("contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const formMessage = document.getElementById("form-message");
+
+    const messages = {
+      en: {
+        success: "Thank you! Your message has been sent successfully.",
+        error: "Oops! There was a problem sending your message."
+      },
+      es: {
+        success: "¡Gracias! Tu mensaje ha sido enviado con éxito.",
+        error: "¡Vaya! Hubo un problema al enviar tu mensaje."
+      }
+    };
+
+    try {
+      const response = await fetch("https://formspree.io/f/mbljyakp", {
+        method: "POST",
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (response.ok) {
+        formMessage.textContent = messages[currentLang].success;
+        formMessage.style.color = "green";
+        form.reset();
+      } else {
+        formMessage.textContent = messages[currentLang].error;
+        formMessage.style.color = "red";
+      }
+    } catch (error) {
+      formMessage.textContent = messages[currentLang].error;
+      formMessage.style.color = "red";
+    }
+  });
+
+
   document.addEventListener("scroll", () => {
     const fadeElements = document.querySelectorAll("[data-fade='true']");
     fadeElements.forEach((el) => {
@@ -18,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollPosition = window.scrollY + window.innerHeight / 3;
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 50; // Ajuste para manejar margen superior.
+      const sectionTop = section.offsetTop - 50
       const sectionHeight = section.offsetHeight;
 
       if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
@@ -66,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch(`../lang/${lang}.json`);
       const translations = await response.json();
 
-      // Update each element based on the translations
       document.getElementById("nav-home").textContent = translations.home;
       document.getElementById("nav-about-me").textContent = translations.about_me;
       document.getElementById("nav-projects").textContent = translations.projects;
@@ -115,4 +155,9 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading language file:", error);
     }
   }
+
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("open");
+  });
 });

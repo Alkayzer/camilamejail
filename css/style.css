@@ -19,3 +19,10 @@ body {
   color: transparent!important;
 }
 
+#mobile-menu {
+  display: none; /* Oculto por defecto en mobile */
+}
+
+#mobile-menu.open {
+  display: flex; /* Mostrado cuando está abierto */
+}
