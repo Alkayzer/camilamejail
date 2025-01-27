@@ -117,8 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("greeting").innerHTML = translations.greeting;
       document.getElementById("conversational-ux").textContent = translations.conversational_ux;
       document.getElementById("content-analyst").textContent = translations.content_analyst;
-      document.getElementById("ux-writing").textContent = translations.ux_writing;
-      document.getElementById("software-tester").textContent = translations.software_tester;
+      document.getElementById("scrum-master").textContent = translations.scrum_master;
+      document.getElementById("html-css").textContent = translations.html_css;
 
       document.getElementById("about-me-title").textContent = translations.about_me_title;
       document.getElementById("about-me-description1").textContent = translations.about_me_description1;
@@ -159,5 +159,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("menu-toggle").addEventListener("click", function() {
     const mobileMenu = document.getElementById("mobile-menu");
     mobileMenu.classList.toggle("open");
+  });
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
   });
 });
